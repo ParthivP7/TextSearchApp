@@ -17,12 +17,16 @@ To run this project, you need to have the following tools installed:
 
 1. Clone the repository to your local machine:
 
-   git clone https://gitlab.com/parthivp7/textsearchapp
+   git clone https://github.com/ParthivP7/TextSearchApp
    cd TextSearchApp
 
 ### Install the project dependencies
 
 npm install
+
+### Reference vidoe
+
+https://github.com/ParthivP7/TextSearchApp/assets/50677992/b8b97b36-fd23-4653-9e29-68f06602bf0f
 
 ### Running the Development Server
 

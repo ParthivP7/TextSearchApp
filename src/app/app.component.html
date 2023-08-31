@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Text Search App</h1>
+  <div class="app">
+    <div class="section">
+      <input-text [inputText]="inputText" (inputTextChanged)="onInputTextChange($event)"></input-text>
+    </div>
+
+    <div class="section">
+      <search-toggle (modeChanged)="onSearchModeChange($event)"></search-toggle>
+    </div>
+
+    <div class="section">
+      <query-inputs [searchMode]="searchMode" (queriesChanged)="onQueryInputsChange($event)"></query-inputs>
+    </div>
+
+    <div class="section">
+      <results-area
+        [inputText]="inputText"
+        [queryInputs]="queryInputs"
+        [searchMode]="searchMode"
+      ></results-area>
+    </div>
+  </div>
+</div>

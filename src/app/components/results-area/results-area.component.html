@@ -1,0 +1,8 @@
+<div class="results">
+  <ng-container *ngIf="results.length > 0; else noResults">
+    <div *ngFor="let result of results" [innerHTML]="highlightText(result)"></div>
+  </ng-container>
+  <ng-template #noResults>
+    <p *ngIf="showNoResultMsg">No match found</p>
+  </ng-template>
+</div>

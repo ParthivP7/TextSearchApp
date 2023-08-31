@@ -1,0 +1,19 @@
+<div class="query-inputs">
+  <div class="query-row" *ngFor="let query of queryInputs; let i = index; trackBy: trackByIndex">
+    <label class="query-label" for="queryInput{{ i }}">Query {{ i + 1 }}:</label>
+    <input
+      class="query-input-field"
+      type="text"
+      id="queryInput{{ i }}"
+      [(ngModel)]="queryInputs[i]"
+      (input)="onQueryInputChange(i, $event)"
+      placeholder="Enter search query"
+    />
+    <button class="remove-button" (click)="removeQueryInput(i)">Remove</button>
+  </div>
+
+  <div class="button-container">
+    <button class="add-query-button" (click)="addQueryInput()" [ngClass]="{ 'disabled-button': isAddButtonDisabled() }">Add Query</button>
+    <button [ngClass]="{ 'search-button': searchMode === 'batch', 'online-mode': searchMode === 'online' }"  (click)="search()">Search</button>
+  </div>
+</div>

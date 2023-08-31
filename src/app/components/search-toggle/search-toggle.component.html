@@ -1,0 +1,11 @@
+<div class="search-toggle">
+  <label>Search Mode:</label>
+  <label>
+    <input type="radio" name="searchMode" (change)="onModeChange('batch')" [checked]="searchMode === 'batch'">
+    Batch Mode
+  </label>
+  <label>
+    <input type="radio" name="searchMode" (change)="onModeChange('online')" [checked]="searchMode === 'online'">
+    Online Mode
+  </label>
+</div>

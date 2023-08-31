@@ -1,0 +1,85 @@
+{
+  "name": "text-search-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setup-jest.ts"
+    ],
+    "globals": {
+      "tsConfigFile": "<rootDir>/src/tsconfig.spec.json",
+      "__TRANSFORM_HTML__": true
+    },
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/*",
+      "<rootDir>/node_modules/*"
+    ],
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
+    "collectCoverageFrom": [
+      "**/*.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/setupJest.ts"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.3.11",
+    "@angular/common": "~13.3.11",
+    "@angular/compiler": "~13.3.11",
+    "@angular/core": "~13.3.11",
+    "@angular/elements": "~13.3.11",
+    "@angular/forms": "~13.3.11",
+    "@angular/localize": "^13.4.0",
+    "@angular/platform-browser": "~13.3.11",
+    "@angular/platform-browser-dynamic": "~13.3.11",
+    "@angular/router": "~13.3.11",
+    "@ngrx/effects": "^13.2.0",
+    "@ngrx/store": "^13.2.0",
+    "@ngrx/store-devtools": "^13.2.0",
+    "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-builders/custom-webpack": "^13.0.0",
+    "@angular-builders/jest": "^13.0.2",
+    "@angular-devkit/build-angular": "~13.3.9",
+    "@angular-devkit/build-ng-packagr": "~0.1002.4",
+    "@angular/cli": "~13.3.9",
+    "@angular/compiler-cli": "~13.3.11",
+    "@angular/language-service": "~13.3.11",
+    "@types/jasmine": "^3.10.12",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
+    "concat": "^1.0.3",
+    "fs-extra": "^8.0.0",
+    "jasmine-core": "~4.0.0",
+    "jest": "^27.3.1",
+    "jest-canvas-mock": "^2.1.0",
+    "jest-preset-angular": "^11.0.1",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^13.3.1",
+    "ngrx-store-freeze": "0.2.4",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.0.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.6.4"
+  }
+}
